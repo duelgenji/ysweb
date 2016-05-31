@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>圣诞老人贺卡制作中...</title>
+    <link rel="shortcut icon" href="public/img/favicon.ico">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/card-edit.css">
+</head>
+<body style="background-color: #afe9dd;">
+<div class="container">
+    <div class="wish">
+        <textarea id="description" rows="2" placeholder="请输入祝福语"></textarea>
+    </div>
+    <div class="card-container-three">
+        <div class="btn-img-add">
+            <input type="file" id="file" accept="image/*" onchange="clip();">
+        </div>
+        <div id="plan2">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <img id="upload-btn" class="add" src="public/img/edit/for-santaclaus-add.png">
+        <div class="card-back"><img src="public/img/edit/for-santaclaus.png"></div>
+        <input type="hidden" id="imgUrl" style="opacity: 0;position: fixed;bottom: -100px">
+    </div>
+    <div id="save" class="button-content">
+        <button>提交预览</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-clip" role="document">
+        <div class="modal-dialog " role="document" style="width: 100%; height: 100%; padding: 0; margin: 0">
+            <div id="clipArea" class="center" style="height: 100%"></div>
+            <img src="" fileName="" id="hit" style="display:none; z-index: 9">
+        </div>
+        <div class="clip-button">
+            <button type="button" class="btn-lg close-modal" data-dismiss="modal">返回</button>
+            <button id="clipBtn" class="btn-lg upload-modal">上传</button>
+        </div>
+        <div class="clip-message">双指捏合或拖动图片以选取头像</div>
+    </div>
+    <img src="public/img/edit/img-back-user.png" class="img-back-user center">
+</div>
+
+<!-- Modal -->
+<div class="modal my-model" id="textModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width: 100%;height: 100%;margin: 0">
+        <div class="modal-content center" style="height: 170px;width: 250px;background-color: #afe9dd;border:none;">
+            <div class="my-modal-body" id="my-message"
+                 style="padding: 30px 10px;text-align: center;font-size: 18px;height: 110px;">
+            </div>
+            <div class="my-modal-footer">
+                <button type="button" class="btn btn-default"
+                        style="display: block; margin: 0 99px;border: none;background-color: #f0b600;color:#4f3c00 "
+                        data-dismiss="modal">确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/sonic.js"></script>
+<script src="public/js/hammer.js"></script>
+<script src="public/js/iscroll-zoom.js"></script>
+<script src="public/js/jquery.photoClip.js"></script>
+<script src="public/js/common.js"></script>
+<script src="public/js/card-santaclaus.js"></script>
+</body>
+</html>

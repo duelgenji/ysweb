@@ -1,0 +1,441 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass";
+@import "share";
+
+.button-content {
+  width: 100%;
+  height: 66px;
+  padding: 10px 100px;
+  z-index: -1;
+  button {
+    width: 100%;
+    height: 100%;
+    background-color: $button-color;
+    border: none;
+    color: $button-text;
+    font-size: 16px;
+    @include border-radius(20px);
+  }
+}
+
+/*
+.index-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  .page {
+    max-width: 414px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-color: $background-color;
+  }
+  .index-background01 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/share/index-back-top.png") no-repeat center -20px;
+    background-size: 100%;
+  }
+  .index-background02 {
+    width: 100%;
+    height: 100%;
+    background: url("../images/share/index-back-bottom.png") no-repeat center bottom;
+    background-size: 100%;
+  }
+  .down-menu {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    span {
+      color: #f8f8f8;
+      @include text-shadow(#808080 0 3px 8px);
+      @include animation(down 1s linear infinite);
+    }
+  }
+  .snow {
+    width: 100%;
+    height: 100%;
+    background: url("../images/share/snow.png") no-repeat center -62px;
+    background-size: 100%;
+  }
+
+  .tree {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/share/tree.png") no-repeat center bottom;
+    background-size: 100%;
+    z-index: 1;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+    max-width: 414px;
+    height: 100%;
+    margin: 0 auto;
+    .back {
+      display: inline-block;
+      width: 300px;
+      bottom: 100px;
+    }
+    .pregnant {
+      display: inline-block;
+      width: 53px;
+      bottom: 260px;
+      right: 149px;
+    }
+    .mother {
+      display: inline-block;
+      width: 61px;
+      left: 136px;
+      bottom: 258px;
+
+    }
+    .for-user {
+      display: inline-block;
+      width: 87px;
+      top: 60px;
+    }
+  }
+
+}
+*/
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: auto;
+}
+
+@keyframes down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 8px;
+  }
+}
+
+@-webkit-keyframes down /*Safari and Chrome*/
+{
+  from {
+    top: 0;
+  }
+  to {
+    top: 8px;
+  }
+}
+
+.card-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  .edit {
+    position: relative;
+    top: -85px;
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    z-index: 100;
+    pointer-events: none;
+  }
+  .add {
+    display: block;
+    position: relative;
+    width: 85px;
+    margin: 0 auto;
+    right: 50px;
+    top: 76px;
+  }
+}
+
+#plan {
+  display: block;
+  position: relative;
+  width: 85px;
+  height: 90px;
+  margin: 0 auto;
+  right: 51px;
+  top: -347px;
+  z-index: -1;
+}
+
+.wish {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 60px;
+  textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    background-color: $textarea-color;
+    color: $text-color;
+    font-size: 16px;
+    @include border-radius(30px);
+    padding: 5px 30px;
+  }
+  textarea:focus {
+    outline: none;
+  }
+}
+
+#clipArea {
+  margin: 0 auto;
+  background: #f2f2f2;
+}
+
+.modal-clip {
+  width: 100%;
+  height: 100%;
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    @include border-radius(0);
+  }
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.back-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 480px;
+  max-height: 736px;
+  .pregnant-back {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    height: 100%;
+    background: url("../img/edit/for-pregnant.png") no-repeat center center;
+    background-size: 90%;
+  }
+  .pregnant-avatar {
+    display: inline-block;
+    width: 90%;
+    max-width: 372px;
+    z-index: -1;
+    img {
+      position: relative;
+      left: 21%;
+      top: 22%;
+      width: 27%;
+      max-width: 100px;
+    }
+  }
+}
+
+.back-container-baby {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 600px;
+  max-height: 736px;
+  .pregnant-back {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    height: 100%;
+    background: url("../img/edit/for-mother.png") no-repeat center center;
+    background-size: 90%;
+  }
+  .pregnant-avatar {
+    display: inline-block;
+    width: 90%;
+    max-width: 372px;
+    z-index: -1;
+    .img1 {
+      position: relative;
+      left: 26%;
+      top: 27%;
+      width: 27%;
+      max-width: 100px;
+    }
+    .img2 {
+      position: relative;
+      left: 15%;
+      top: 51%;
+      width: 21%;
+      max-width: 78px;
+    }
+  }
+}
+
+.button-position {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  .button-share {
+    width: 78%;
+    margin: 0 auto;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: $button-color;
+    border: none;
+    color: $button-text;
+    font-size: 16px;
+    @include border-radius(20px);
+  }
+  .button-left {
+  }
+  .button-right {
+    float: right;
+  }
+}
+
+.wish-container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 414px;
+  padding: 20px 0 20px 30px;
+  .wish-content {
+    display: block;
+    min-height: 80px;
+    font-size: 18px;
+    color: white;
+    background: url("../img/wish.png") no-repeat left top;
+    background-size: 20%;
+    padding: 12% 16% 0;
+  }
+}
+
+.modal-share {
+  width: 100%;
+  height: 100%;
+  padding: 0 7px;
+  background: url("../img/share.png") no-repeat center top;
+  background-size: 100%;
+}
+
+.audio-content {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  audio {
+    position: relative;
+    left: -8px;
+  }
+  span {
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    display: block;
+    pointer-events: none;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    background: $background-color;
+  }
+}
+
+#snow {
+  position: fixed;
+  top: 0px;
+  pointer-events: none;
+}
+
+#clipArea {
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.modal-clip {
+  width: 100%;
+  height: 100%;
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    @include border-radius(0);
+  }
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.clip-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: $background-color;
+}
+
+.close-modal {
+  position: relative;
+  left: 56%;
+  padding: 5px 10px;
+  border: none;
+  @include border-radius(5px);
+  color: $button-text;
+  background-color: $button-color;
+}
+
+.upload-modal {
+  position: relative;
+  left: 58%;
+  padding: 5px 10px;
+  border: none;
+  @include border-radius(5px);
+  color: $button-text;
+  background-color: $button-color;
+}
+
+.img-back-user {
+  pointer-events: none;
+  width: 275px;
+  left: 38px;
+  top: 50%;
+  margin-top: -182px;
+}
+
+.btn-img-add{
+
+}
+
+@media screen and (max-width: 359px) {
+  .wish-container {
+    .wish-content {
+      font-size: 16px;
+    }
+  }
+  .back-container-baby {
+    min-height: 515px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+
+}

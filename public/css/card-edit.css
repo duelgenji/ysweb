@@ -1,0 +1,353 @@
+/*
+ * common
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  padding: 0;
+}
+
+.wish {
+  min-width: 320px;
+  max-width: 414px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 0px;
+}
+.wish textarea {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  border: none;
+  resize: none;
+  background-color: #e8e1cf;
+  color: #666;
+  font-size: 16px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 5px 30px;
+}
+.wish textarea:focus {
+  outline: none;
+}
+
+.card-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.card-container .btn-img-add {
+  position: relative;
+  top: 66px;
+  left: 67px;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  opacity: 0;
+}
+.card-container .btn-img-add input {
+  font-size: 50px;
+}
+.card-container .card-back {
+  position: relative;
+  top: -276px;
+  width: 320px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.card-container .card-back img {
+  width: 100%;
+}
+.card-container .add {
+  position: relative;
+  top: -116px;
+  left: 67px;
+  width: 90px;
+  pointer-events: none;
+}
+
+.card-container-two {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.card-container-two .btn-img-add {
+  position: relative;
+  top: 83px;
+  left: 82px;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  opacity: 0;
+}
+.card-container-two .btn-img-add input {
+  font-size: 50px;
+}
+.card-container-two .btn-img-add1 {
+  position: relative;
+  top: 80px;
+  left: 140px;
+  width: 67px;
+  height: 67px;
+  overflow: hidden;
+  opacity: 0;
+}
+.card-container-two .btn-img-add1 input {
+  font-size: 50px;
+}
+.card-container-two .card-back {
+  position: relative;
+  top: -401px;
+  width: 320px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.card-container-two .card-back img {
+  width: 100%;
+}
+.card-container-two .add {
+  position: relative;
+  top: -229px;
+  left: 82px;
+  width: 90px;
+  pointer-events: none;
+}
+.card-container-two .add-baby {
+  position: relative;
+  top: -151px;
+  left: 45px;
+  width: 67px;
+  pointer-events: none;
+}
+
+.card-container-three {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.card-container-three .btn-img-add {
+  position: relative;
+  top: 105px;
+  left: 86px;
+  width: 150px;
+  height: 60px;
+  overflow: hidden;
+  opacity: 0;
+}
+.card-container-three .btn-img-add input {
+  font-size: 50px;
+}
+.card-container-three .card-back {
+  position: relative;
+  margin: 0 auto;
+  top: -218px;
+  width: 300px;
+  pointer-events: none;
+}
+.card-container-three .card-back img {
+  width: 100%;
+}
+.card-container-three .add {
+  position: relative;
+  top: -53px;
+  left: 86px;
+  width: 150px;
+  pointer-events: none;
+}
+
+#plan {
+  position: relative;
+  top: -74px;
+  left: 82px;
+  width: 90px;
+  height: 90px;
+  pointer-events: none;
+}
+#plan canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#plan0 {
+  position: relative;
+  top: -20px;
+  left: 67px;
+  width: 90px;
+  height: 90px;
+  pointer-events: none;
+}
+#plan0 canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#plan1 {
+  position: relative;
+  top: -76px;
+  left: 139px;
+  width: 67px;
+  height: 67px;
+  pointer-events: none;
+}
+#plan1 canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#plan2 {
+  position: relative;
+  top: 42px;
+  left: 88px;
+  width: 140px;
+  height: 96px;
+  pointer-events: none;
+}
+#plan2 canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.button-content {
+  width: 100%;
+  padding: 35px;
+}
+.button-content button {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f0b600;
+  border: none;
+  color: #4f3c00;
+  font-size: 16px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: auto;
+}
+
+#clipArea {
+  margin: 0 auto;
+  background: #ccc;
+}
+
+#clipArea1 {
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.modal-clip {
+  width: 100%;
+  height: 100%;
+}
+.modal-clip .modal-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.modal-clip .modal-body {
+  padding: 0;
+}
+
+.clip-message {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  z-index: 300;
+}
+
+.clip-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #90CABE;
+}
+
+.close-modal {
+  position: relative;
+  left: 56%;
+  padding: 5px 10px;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #4f3c00;
+  background-color: #f0b600;
+  z-index: 300;
+}
+
+.upload-modal {
+  position: relative;
+  left: 58%;
+  padding: 5px 10px;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #4f3c00;
+  background-color: #f0b600;
+  z-index: 300;
+}
+
+.img-back-pregnant {
+  pointer-events: none;
+  width: 320px;
+  top: 50%;
+  margin-top: -217px;
+}
+
+.img-back-mother {
+  pointer-events: none;
+  width: 320px;
+  top: 50%;
+  margin-top: -226px;
+}
+
+.img-back-baby {
+  pointer-events: none;
+  width: 320px;
+  top: 50%;
+  margin-top: -142px;
+}
+
+.img-back-user {
+  pointer-events: none;
+  width: 320px;
+  left: 0;
+  top: 50%;
+  margin-top: -150px;
+}

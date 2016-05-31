@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>有了宝贝——DIY专属你的圣诞贺卡</title>
+    <link rel="shortcut icon" href="public/img/favicon.ico">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/swiper.min.css">
+    <link rel="stylesheet" href="public/css/animate.min.css">
+    <link rel="stylesheet" href="public/css/card-index.css">
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-------------slide1----------------->
+        <section class="swiper-slide">
+            <div class="index-back-bottom">
+                <div class="index-back-top"></div>
+            </div>
+            <img src="public/img/index/arrow.png" style="width:38px;height:38px; top:460px; left:150px;" id="array"
+                 class="resize">
+        </section>
+        <!---------------slide2-------------->
+        <section class="swiper-slide page">
+            <div class="snow">
+                <div class="menu">
+                    <img class="back center" src="public/img/index/menu.png">
+                    <img id="pregnant" class="center pregnant" src="public/img/index/pregnant.png">
+                    <img id="mother" class="center mother" src="public/img/index/mother.png">
+                    <img id="santaclaus" class="center for-user" src="public/img/index/user.png">
+                </div>
+                <div class="tree"></div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     style="overflow: hidden">
+    <div class="modal-dialog " role="document" style="height: 100%">
+        <button type="button" class="close"
+                data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="check center" id="check"></div>
+    </div>
+</div>
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/swiper.min.js"></script>
+<script src="public/js/swiper.animate.min.js"></script>
+<script src="public/js/card-index.js"></script>
+<script>
+    $(document).ready(function(){
+        console.log(123);
+    });
+</script>
+</body>
+</html>
