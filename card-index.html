@@ -69,8 +69,17 @@
         var jsapi_ticket = "m7RQzjA_ljjEkt-JCoklRPJCx-of2JU6jzSzDvnqvubsePewQQk-lKt8-eueMDv7kWMxIHwCJxnmJcs6OWlTnw";
         var current_url = location.href;
 
-        var signature = "jsapi_ticket="+jsapi_ticket+"&noncestr="+nonceStr+"&timestamp="+timestamp+"&url="+current_url;
-        signature = SHA1.hex(signature);
+        var string = "jsapi_ticket="+jsapi_ticket+"&noncestr="+nonceStr+"&timestamp="+timestamp+"&url="+current_url;
+        var signature = SHA1.hex(string);
+
+        var json = {};
+        json.timestamp = timestamp;
+        json.nonceStr = nonceStr;
+        json.current_url = current_url;
+        json.jsapi_ticket = jsapi_ticket;
+        json.string = string;
+        json.signature = signature;
+        alert(JSON.stringify(json));
 
 
         wx.config({
