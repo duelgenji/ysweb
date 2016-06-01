@@ -63,7 +63,7 @@
         var SHA1 = new Hashes.SHA1;
 
         var appId =  "wx61f6f47b56dfa5fd";
-        var timestamp =  new Date().getMilliseconds();
+        var timestamp =  parseInt(new Date().getTime()/1000);
         var nonceStr =  createNonceStr();
         //todo jsticket
         var jsapi_ticket = "m7RQzjA_ljjEkt-JCoklRPJCx-of2JU6jzSzDvnqvubsePewQQk-lKt8-eueMDv7kWMxIHwCJxnmJcs6OWlTnw";
